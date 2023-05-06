@@ -541,7 +541,7 @@ function winGame(){
     textSize(37);
     rect(1.5*PIECE_SIZE, 2.75*PIECE_SIZE, 5*PIECE_SIZE, 1.5*PIECE_SIZE);
     fill(255);
-    text("Você venceu!!! Parabéns bro.",2.5*PIECE_SIZE, 3.65*PIECE_SIZE);
+    text("Vitória!",2.5*PIECE_SIZE, 3.65*PIECE_SIZE);
     push();
     translate(4.75*PIECE_SIZE+PIECE_SIZE/2, 3*PIECE_SIZE+PIECE_SIZE/2);
     image(pieceImage[pieceWinId], -PIECE_SIZE/2-selectedPieceY, -PIECE_SIZE/2-selectedPieceY, PIECE_SIZE+2*selectedPieceY, PIECE_SIZE+2*selectedPieceY);
@@ -562,7 +562,7 @@ function lostGame(){
     textSize(37);
     rect(1.5*PIECE_SIZE, 2.75*PIECE_SIZE, 5*PIECE_SIZE, 1.5*PIECE_SIZE);
     fill(255);
-    text("Você perdeu... Afroditou.",2.5*PIECE_SIZE, 3.65*PIECE_SIZE);
+    text("Derrota!",2.5*PIECE_SIZE, 3.65*PIECE_SIZE);
     push();
     translate(4.75*PIECE_SIZE+PIECE_SIZE/2, 3*PIECE_SIZE+PIECE_SIZE/2);
     image(pieceImage[pieceWinId], -PIECE_SIZE/2-selectedPieceY, -PIECE_SIZE/2-selectedPieceY, PIECE_SIZE+2*selectedPieceY, PIECE_SIZE+2*selectedPieceY);

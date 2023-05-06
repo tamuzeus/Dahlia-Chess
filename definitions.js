@@ -91,7 +91,7 @@ var OCCUPIED_CELL   = 1;
 var EMPTY_CELL      = 2;
 
 // Game states
-var SPLASH_SCREEN   = 0;
+var SPLASH_SCREEN   = 2;
 var MAIN_MENU       = 1;
 var SETTINGS        = 2;
 var GAME            = 3;
