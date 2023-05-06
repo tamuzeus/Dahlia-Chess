@@ -27,7 +27,7 @@ class GameState{
         this.color = 0;
         this.boardColor1 = color(0, 0, 25);
         this.boardColor2 = color(234, 238, 241);
-        this.level = 2;
+        this.level = 3;
     }
 
     loadPieces(){
