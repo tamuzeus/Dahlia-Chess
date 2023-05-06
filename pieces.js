@@ -525,7 +525,7 @@ function drawComputerThinking(){
     textSize(35);
     rect(1.5*PIECE_SIZE, 2.75*PIECE_SIZE, 5*PIECE_SIZE, 1.5*PIECE_SIZE);
     fill(255);
-    text("O 'Mente' está pensando...",1.9*PIECE_SIZE, 3.65*PIECE_SIZE);
+    text("Mente: Analisando...",1.9*PIECE_SIZE, 3.75*PIECE_SIZE);
     pop();
 }
 
