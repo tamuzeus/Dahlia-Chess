@@ -1,37 +1,61 @@
-<!--
- Name:          Walter Newsome
- Contact:       waltern@vt.edu
-                Computer engineering at Virginia Tech
- Last modified: 2021-11-20
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="stats.css" />
+    <link rel="icon" href="Images/Icons/WebsiteIcon.png" />
 
- This chess game uses an adversarial search algorithm (minimax) to calculate
- the optimal move based on the current board and the allowed moves of each piece.
-
- The game starts by displaying a splash screen followed by a main menu in which
- the user can change settings and learn how to interact with the game.
-
--->
-
-<head>
     <title>Dahlia Chess</title>
-    <link rel="shortcut icon" href="/assets/front.png"/>
-    <script src="p5.js"></script>
-    <script src="pieces.js"></script>
-    <script src="opponents_move.js"></script>
-    <script src="definitions.js"></script>
-    <script src="screens.js"></script>
-    <script src="main.js"></script>
-    <style>
-        body{
-            justify-content: center;
-            align-items: center;
-            display: grid;
-            margin: 0;
-            background-color: black;
-            height: 100%;
-            width: 100%;
-        }
-    </style>
-</head>
-<body>
-</body>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="Header">
+      <div class="logoHeader">
+        <img src="/Images/knight.PNG" class="logoHeight" />
+      </div>
+    </header>
+
+    <div class="Container">
+      <div id="Board"></div>
+    </div>
+
+    <div class="buttonsContainer">
+      <button class="resignButton" onclick="resign()">Afroditar</button>
+      <button class="drawButton" onclick="drawGame()">Empate</button>
+    </div>
+
+    <div class="CapturedPiecesContainer">
+      <div class="WhitePiecesCaptured"></div>
+      <div class="BlackPiecesCaptured"></div>
+    </div>
+
+    <nav
+      style="
+        position: relative;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        margin-top: 10vh;
+      "
+    >
+
+    </nav>
+
+    <script src="Scripts/Pieces.js"></script>
+    <script src="Scripts/app.js"></script>
+    <script src="Scripts/ComputerPlayer.js"></script>
+  </body>
+</html>
